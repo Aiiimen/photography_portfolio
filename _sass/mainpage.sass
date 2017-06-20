@@ -1,0 +1,200 @@
+@font-face
+  font-family: Proxima_reg
+  src : url(Proxima_Nova_Alt_Regular_webfont.ttf)
+
+
+@font-face
+  font-family: Proxima_bold
+  src: url(Proxima_Nova_Alt_Bold_webfont.ttf)
+
+@font-face
+  font-family: Proxima_black
+  src: url(Proxima_Nova_Alt_Black_webfont.ttf)
+
+
+section
+  padding: 30px 80px 0px 80px
+  box-sizing: border-box
+  color: #110f0f
+  overflow-x: hidden
+
+// nav bar + header text
+.header
+  display: flex
+  flex-direction: column
+  width: 100%
+  font-family: Proxima_bold
+  font-size: 18px
+  .nav_bar
+    display: flex
+    justify-content: space-between
+    img
+      height: 30px
+    a
+      text-decoration: none
+      cursor: pointer
+      margin-left: 60px
+      color: #110f0f
+    a:nth-child(2)
+      color: #bfbfbf
+  .intro
+    align-self: center
+    width: 40%
+    font-size: 60px
+    padding-top: 180px
+    box-sizing: border-box
+    text-align: center
+
+
+// photos section + cato
+.photos
+  display: flex
+  flex-direction: column
+  width: 100%
+  padding: 200px 0 120px 0
+  box-sizing: border-box
+  font-family: Proxima_reg
+  .cato_container
+    padding: 0px 120px 80px 120px
+    display: flex
+    justify-content: space-between
+    width: 100%
+    box-sizing: border-box
+    .catos
+      font-size: 18px
+      font-family: Proxima_bold
+      letter-spacing: 1px
+      a
+        color: #bfbfbf
+        cursor: pointer
+        margin-right: 40px
+        text-decoration: none
+    img
+      margin-left: 30px
+      cursor: pointer
+  .photos_belt
+    width: 200%
+    position: relative
+    left: 0
+
+    .photos_containers
+      width: 50%
+      float: left
+      padding: 0px 120px 0px 120px
+      box-sizing: border-box
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      .photo_holder
+        width: 400px
+        height: 250px
+        min-width: 300px
+        background-color: #ddd
+        margin-bottom: 40px
+        background-image: url("img/street1.jpg")
+        background-size: cover
+
+// footer section
+.footer
+  width: 100%
+  text-align: center
+  font-family: Proxima_bold
+  padding-bottom: 80px
+  p:nth-child(1)
+    font-size: 80px
+    margin-top: 0
+    margin-bottom: 0
+  p:nth-child(2)
+    font-family: Proxima_reg
+    font-size: 40px
+    cursor: pointer
+
+
+
+//media queries
+
+//iphone 4 + 4s 320px - 480px
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+  .header
+    padding: 30px 10 0 10
+    .nav_bar
+      flex-direction: column
+      align-items: center
+      img
+        height: auto
+        width: 30%
+        margin-bottom: 30px
+      a:nth-child(1)
+        margin-right: 30px
+        margin-left: 0
+      a:nth-child(2)
+        margin-left: 30px
+    .intro
+      width: 100%
+      padding-top: 50px
+      font-size: 40px
+
+  .photos
+    padding: 80px 0px 30px 0px
+    .cato_container
+      padding: 0 0 50px 0
+      justify-content: center
+      .catos
+        display: flex
+        a
+          margin: 0
+        a:nth-child(1)
+          margin-right: 20px
+        a:nth-child(2)
+          margin-left: 20px
+      img
+        display: none
+    .photos_belt
+      padding: 0 10px 0 10px
+      box-sizing: border-box
+      .photos_containers
+        padding-left: 0px
+        padding-right: 10px
+        .photo_holder
+          margin-bottom: 10px
+      .photos_containers:nth-child(2)
+        padding-left: 10px
+  .footer
+    padding: 20px 10px 30px 10px
+    .footer_container
+      p
+        font-size: 50px
+      p:nth-child(2)
+        font-size: 20px
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .header
+    .intro
+      width: 70%
+  .photos
+    padding-bottom: 30px
+    .cato_container
+      img
+        display: none
+    .photos_belt
+      .photos_containers
+        .photo_holder
+          width: 600px
+          height: 350px
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px)
+  .header
+    .intro
+      width: 70%
+  .photos
+    padding-bottom: 30px
+    .cato_container
+      img
+        display: none
+    .photos_belt
+      .photos_containers
+        .photo_holder
+          width: 350px
+          height: 200px
