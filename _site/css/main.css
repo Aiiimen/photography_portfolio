@@ -104,9 +104,55 @@ section {
         height: 250px;
         min-width: 300px;
         background-color: #ddd;
-        margin-bottom: 40px;
-        background-image: url("img/street1.jpg");
-        background-size: cover; }
+        margin-bottom: 40px; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(1) {
+      background-image: url("img/event/event2.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(2) {
+      background-image: url("img/event/event1.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(3) {
+      background-image: url("img/event/event3.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(4) {
+      background-image: url("img/event/event4.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(5) {
+      background-image: url("img/event/event5.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(6) {
+      background-image: url("img/event/event6.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(7) {
+      background-image: url("img/event/event7.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(1) .photo_holder:nth-child(8) {
+      background-image: url("img/event/event8.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(1) {
+      background-image: url("img/street/street2.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(2) {
+      background-image: url("img/street/street1.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(3) {
+      background-image: url("img/street/street3.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(4) {
+      background-image: url("img/street/street4.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(5) {
+      background-image: url("img/street/street5.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(6) {
+      background-image: url("img/street/street6.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(7) {
+      background-image: url("img/street/street7.jpg");
+      background-size: cover; }
+    .photos .photos_belt .photos_containers:nth-child(2) .photo_holder:nth-child(8) {
+      background-image: url("img/street/street8.jpg");
+      background-size: cover; }
 
 .footer {
   width: 100%;
