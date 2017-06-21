@@ -20,25 +20,36 @@ section
 
 // nav bar + header text
 .header
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-flex-direction: column
   width: 100%
   font-family: Proxima_bold
   font-size: 18px
   .nav_bar
     display: flex
+    display: -webkit-flex
+    display: -ms-flexbox
     justify-content: space-between
-    img
-      height: 30px
+    -webkit-justify-content: space-between
     a
-      text-decoration: none
-      cursor: pointer
-      margin-left: 60px
-      color: #110f0f
-    a:nth-child(2)
-      color: #bfbfbf
+      img
+        height: 30px
+    div
+      a
+        text-decoration: none
+        cursor: pointer
+        margin-left: 60px
+        color: #110f0f
+      a:nth-child(2)
+        color: #bfbfbf
   .intro
     align-self: center
+    -ms-flex-item-align: center
+    -webkit-align-self: center
     width: 40%
     font-size: 60px
     padding-top: 180px
@@ -49,7 +60,11 @@ section
 // photos section + cato
 .photos
   display: flex
+  display: -webkit-flex
+  display: -ms-flexbox
   flex-direction: column
+  -ms-flex-direction: column
+  -webkit-flex-direction: column
   width: 100%
   padding: 200px 0 120px 0
   box-sizing: border-box
@@ -57,7 +72,11 @@ section
   .cato_container
     padding: 0px 120px 80px 120px
     display: flex
+    display: -webkit-flex
+    display: -ms-flexbox
     justify-content: space-between
+    -ms-justify-content: space-between
+    -webkit-justify-content: space-between
     width: 100%
     box-sizing: border-box
     .catos
@@ -83,8 +102,15 @@ section
       padding: 0px 120px 0px 120px
       box-sizing: border-box
       display: flex
+      display: -webkit-flex
+      display: -ms-flexbox
       justify-content: space-between
+      -ms-justify-content: space-between
+      -webkit-justify-content: space-between
       flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      -webkit-flex-wrap: wrap
+
       .photo_holder
         width: 400px
         height: 250px
@@ -100,6 +126,7 @@ section
   text-align: center
   font-family: Proxima_bold
   padding-bottom: 80px
+  color: #110f0f
   p:nth-child(1)
     font-size: 80px
     margin-top: 0
@@ -108,6 +135,18 @@ section
     font-family: Proxima_reg
     font-size: 40px
     cursor: pointer
+    a
+      color: #110f0f
+      text-decoration: none
+  .social_media
+    display: flex
+    display: -webkit-flex
+    display: -ms-flexbox
+    justify-content: center
+    -ms-justify-content: center
+    -webkit-justify-content: center
+    a
+      margin: 20px
 
 
 
@@ -119,16 +158,23 @@ section
     padding: 30px 10 0 10
     .nav_bar
       flex-direction: column
+      -ms-flex-direction: column
+      -webkit-flex-direction: column
       align-items: center
-      img
-        height: auto
-        width: 30%
-        margin-bottom: 30px
-      a:nth-child(1)
-        margin-right: 30px
-        margin-left: 0
-      a:nth-child(2)
-        margin-left: 30px
+      -ms-align-items: center
+      -webkit-align-items: center
+      a
+        text-align: center
+        img
+          height: auto
+          width: 30%
+          margin-bottom: 30px
+      div
+        a:nth-child(1)
+          margin-right: 30px
+          margin-left: 0
+        a:nth-child(2)
+          margin-left: 30px
     .intro
       width: 100%
       padding-top: 50px
@@ -139,8 +185,12 @@ section
     .cato_container
       padding: 0 0 50px 0
       justify-content: center
+      -ms-justify-content: center
+      -webkit-justify-content: center
       .catos
         display: flex
+        display: -ms-flexbox
+        dispplay: -webkit-flex
         a
           margin: 0
         a:nth-child(1)
@@ -159,6 +209,7 @@ section
           margin-bottom: 10px
       .photos_containers:nth-child(2)
         padding-left: 10px
+        padding-right: 0px
   .footer
     padding: 20px 10px 30px 10px
     .footer_container
@@ -167,7 +218,7 @@ section
       p:nth-child(2)
         font-size: 20px
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px)
   .header
     .intro
       width: 70%
@@ -192,9 +243,23 @@ section
     padding-bottom: 30px
     .cato_container
       img
-        display: none
+
     .photos_belt
       .photos_containers
         .photo_holder
           width: 350px
           height: 200px
+
+@media screen and (min-width: 1440px)
+  .header
+    .intro
+      width: 40%
+  .photos
+    padding-bottom: 30px
+    .cato_container
+      img
+
+    .photos_belt
+      .photos_containers
+        .photo_holder
+          margin-right: 0px

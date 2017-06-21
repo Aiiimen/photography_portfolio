@@ -1,15 +1,22 @@
 .header
   .about
-    a
-      color: #bfbfbf
-    a:nth-child(2)
-      color: #110f0f
+    div
+      a
+        color: #bfbfbf
+      a:nth-child(2)
+        color: #110f0f
   .about_container
     padding: 0 120px 80px 120px
     display: flex
+    display: -webkit-flex
+    display: -ms-flexbox
     flex-direction: column
+    -ms-flex-direction: column
+    -webkit-flex-direction: column
     .about_intro
       align-self: flex-start
+      -ms-align-self: flex-start
+      -webkit-align-self: flex-start
       width: 100%
       box-sizing: border-box
       text-align: left
@@ -20,14 +27,21 @@
       padding-top: 80px
       .contact
         display: flex
+        display: -ms-flexbox
+        display: -webkit-flex
         img
           margin-right: 40px
           width: 30px
           height: 30px
         p
           margin-top: 0
+          a
+            text-decoration: none
+            color: #110f0f
     .info
       display: flex
+      display: -ms-flexbox
+      display: -webkit-flexbox
       width: 100%
       padding-top: 50px
       box-sizing: border-box
@@ -58,6 +72,8 @@
         font-size: 20px
       .info
         flex-direction: column
+        -ms-flex-direction: column
+        -webkit-flex-direction: column
         .description
           width: 100%
           font-size: 18px
@@ -74,6 +90,8 @@
         font-size: 20px
       .info
         flex-direction: column
+        -ms-flex-direction: column
+        -webkit-flex-direction: column
         .description
           width: 100%
           font-size: 18px
