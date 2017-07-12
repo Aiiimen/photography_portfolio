@@ -33,12 +33,11 @@ $(document).ready(function(){
 
   var photoContainer = $('.photos_containers').width();
 
-  console.log(h);
-  console.log(w);
-  console.log(photoContainer);
+
+
 
 //expand
-  $('.thumbs img:nth-child(2)').click(function(){
+  $('.thumbs .large').click(function(){
 
     $('.photo_holder').animate({
       height: photoContainer * 60 / 100,
@@ -47,7 +46,7 @@ $(document).ready(function(){
   });
 
 //shrink
-  $('.thumbs img:nth-child(1)').click(function(){
+  $('.thumbs .small').click(function(){
     console.log("hello");
     $('.photo_holder').animate({
       height: h,
@@ -55,5 +54,8 @@ $(document).ready(function(){
     },800);
   });
 
+ $('.thumbs').click(function(){
+   $(this).find('div').slideToggle();
+ })
 
 });

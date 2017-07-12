@@ -2,8 +2,14 @@
   font-family: Proxima_reg;
   src: url(Proxima_Nova_Alt_Regular_webfont.ttf); }
 @font-face {
+  font-family: Proxima_reg_IE;
+  src: url(Proxima_Nova_Alt_Regular_webfont.eot); }
+@font-face {
   font-family: Proxima_bold;
   src: url(Proxima_Nova_Alt_Bold_webfont.ttf); }
+@font-face {
+  font-family: Proxima_bold_IE;
+  src: url(Proxima_Nova_Alt_Bold_webfont.eot); }
 @font-face {
   font-family: Proxima_black;
   src: url(Proxima_Nova_Alt_Black_webfont.ttf); }
@@ -21,7 +27,7 @@ section {
   flex-direction: column;
   -webkit-flex-direction: column;
   width: 100%;
-  font-family: Proxima_bold;
+  font-family: Proxima_bold, Proxima_bold_IE;
   font-size: 18px; }
   .header .nav_bar {
     display: flex;
@@ -58,7 +64,7 @@ section {
   width: 100%;
   padding: 200px 0 120px 0;
   box-sizing: border-box;
-  font-family: Proxima_reg; }
+  font-family: Proxima_reg, Proxima_reg_IE; }
   .photos .cato_container {
     padding: 0px 120px 80px 120px;
     display: flex;
@@ -71,16 +77,25 @@ section {
     box-sizing: border-box; }
     .photos .cato_container .catos {
       font-size: 18px;
-      font-family: Proxima_bold;
+      font-family: Proxima_bold, Proxima_bold_IE;
       letter-spacing: 1px; }
       .photos .cato_container .catos a {
         color: #bfbfbf;
         cursor: pointer;
         margin-right: 40px;
         text-decoration: none; }
-    .photos .cato_container img {
-      margin-left: 30px;
-      cursor: pointer; }
+    .photos .cato_container .thumbs {
+      font-family: Proxima_bold, Proxima_bold_IE;
+      font-size: 15px; }
+      .photos .cato_container .thumbs div {
+        display: flex;
+        cursor: pointer; }
+        .photos .cato_container .thumbs div img {
+          height: 10px;
+          width: 12px;
+          margin-left: 10px; }
+      .photos .cato_container .thumbs .small {
+        display: none; }
   .photos .photos_belt {
     width: 200%;
     position: relative;
@@ -157,7 +172,7 @@ section {
 .footer {
   width: 100%;
   text-align: center;
-  font-family: Proxima_bold;
+  font-family: Proxima_bold, Proxima_bold_IE;
   padding-bottom: 80px;
   color: #110f0f; }
   .footer p:nth-child(1) {
@@ -165,7 +180,7 @@ section {
     margin-top: 0;
     margin-bottom: 0; }
   .footer p:nth-child(2) {
-    font-family: Proxima_reg;
+    font-family: Proxima_reg, Proxima_reg_IE;
     font-size: 40px;
     cursor: pointer; }
     .footer p:nth-child(2) a {
