@@ -1,16 +1,22 @@
 @font-face
   font-family: Proxima_reg
   src : url(Proxima_Nova_Alt_Regular_webfont.ttf)
+
+
 @font-face
   font-family: Proxima_reg_IE
-  src : url(Proxima_Nova_Alt_Regular_webfont.eot)
+  src: url(Proxima_Nova_Alt_Regular_webfont.eot)
+
+
 
 @font-face
   font-family: Proxima_bold
   src: url(Proxima_Nova_Alt_Bold_webfont.ttf)
 @font-face
   font-family: Proxima_bold_IE
-  src: url(Proxima_Nova_Alt_bold_webfont.eot)
+
+  src: url(Proxima_Nova_Alt_Bold_webfont.eot)
+
 
 @font-face
   font-family: Proxima_black
@@ -94,9 +100,18 @@ section
         cursor: pointer
         margin-right: 40px
         text-decoration: none
-    img
-      margin-left: 30px
-      cursor: pointer
+    .thumbs
+      font-family: Proxima_bold, Proxima_bold_IE
+      font-size: 15px
+      div
+        display: flex
+        cursor: pointer
+        img
+          height: 10px
+          width: 12px
+          margin-left: 10px
+      .small
+        display: none
   .photos_belt
     width: 200%
     position: relative
@@ -123,7 +138,72 @@ section
         min-width: 300px
         background-color: #ddd
         margin-bottom: 40px
-        background-image: url("img/street1.jpg")
+
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(1)
+        background-image: url("img/event/event2.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(2)
+        background-image: url("img/event/event1.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(3)
+        background-image: url("img/event/event3.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(4)
+        background-image: url("img/event/event4.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(5)
+        background-image: url("img/event/event5.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(6)
+        background-image: url("img/event/event6.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(7)
+        background-image: url("img/event/event7.jpg")
+        background-size: cover
+    .photos_containers:nth-child(1)
+      .photo_holder:nth-child(8)
+        background-image: url("img/event/event8.jpg")
+        background-size: cover
+
+
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(1)
+        background-image: url("img/street/street2.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(2)
+        background-image: url("img/street/street1.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(3)
+        background-image: url("img/street/street3.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(4)
+        background-image: url("img/street/street4.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(5)
+        background-image: url("img/street/street5.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(6)
+        background-image: url("img/street/street6.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(7)
+        background-image: url("img/street/street7.jpg")
+        background-size: cover
+    .photos_containers:nth-child(2)
+      .photo_holder:nth-child(8)
+        background-image: url("img/street/street8.jpg")
         background-size: cover
 
 // footer section
@@ -138,7 +218,8 @@ section
     margin-top: 0
     margin-bottom: 0
   p:nth-child(2)
-    font-family: Proxima_reg, Proxima_bold_IE
+    font-family: Proxima_reg, Proxima_reg_IE
+
     font-size: 40px
     cursor: pointer
     a
