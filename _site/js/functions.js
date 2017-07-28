@@ -1,18 +1,28 @@
 $(document).ready(function(){
 
 
-  //nav bar on click
-  $('.cato_link:first').css("color", "#110f0f");
 
-  $('.cato_link').click(function(e){
+//toggle between catogories
+  $('.cato_link').click(function(){
 
-    $('.cato_link').css("color","#bfbfbf");
-    $(this).css("color","#110f0f");
+    $('.cato_link').removeClass("active");
+    $(this).toggleClass("active");
 
   });
 
-  //photo belt
+// menu toggle (img)
+$('.menu').click(function(){
 
+  $(this).find('img').fadeToggle();
+  $('body').toggleClass("overflow");
+
+  $('.menu_container').fadeToggle( function(){
+    $(this).toggleClass("menu_active");
+
+  });
+})
+
+  //photo belt
   $('.cato_link:first').click(function(){
 
     $('.photos_belt').animate({
@@ -47,7 +57,6 @@ $(document).ready(function(){
 
 //shrink
   $('.thumbs .small').click(function(){
-    console.log("hello");
     $('.photo_holder').animate({
       height: h,
       width: w
