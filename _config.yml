@@ -8,8 +8,9 @@
 # Site settings
 title: Aimen Ben Aissa
 email: aimenebenfika@gmail.com
-description: A london based photographer goes by the name of Aimen. Event and
-street photographer who takes photographs instead of snapshots
+description: > # this means to ignore newlines until "baseurl:"
+A london based photographer goes by the name of Aimen. Event and
+street photographer who takes photographs instead of snapshots.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 
