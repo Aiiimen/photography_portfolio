@@ -21,3 +21,58 @@
 @font-face
   font-family: Proxima_black
   src: url(Proxima_Nova_Alt_Black_webfont.ttf)
+
+
+
+
+.container
+  font-family: Proxima_reg, Proxima_reg_IE
+  padding-top: 30px
+  max-width: 100%
+  position: relative
+  padding-right: 0
+  padding-left: 0
+  .nav_bar
+    z-index: 10
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    position: fixed
+    max-width: inherit
+    width: 100%
+    .logo
+      flex-grow: 4
+      svg
+        width: 100px
+        height: auto
+    nav
+      flex-grow: 1
+      align-items: center
+
+      ol
+        display: flex
+        list-style: none
+        margin-bottom: 0
+        li
+          color: #D6D4D4
+          padding-right: 20px
+          cursor: pointer
+          &:hover
+            color: #111
+    .social_media
+      svg
+        width: 23px
+        height: auto
+        cursor: pointer
+      svg:nth-child(1)
+        &:hover path
+          fill: #bc2a8d
+      svg:nth-child(2)
+        &:hover path
+          fill: #3B5998
+      svg:nth-child(3)
+        &:hover path
+          fill: #00aced
+
+  .card-columns
+    display: inline-block
