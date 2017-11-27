@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Aimen Ben Aissa
-email: aimenebenfika@gmail.com
+title: Aimen Ben Aissa | Event Photographer
+email: aimensphotography@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A london based photographer goes by the name of Aimen. Event and
-  street photographer who takes photographs instead of snapshots.
+  A london based photographer goes by the name of Aimen. Event photographer that's
+  all about capturing the moment.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://aimen.photos" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
