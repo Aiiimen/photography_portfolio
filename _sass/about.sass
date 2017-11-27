@@ -1,0 +1,52 @@
+.about
+  padding-top: 80px
+  .hero
+    width: 100%
+  .about-me
+    padding-top: 45px
+    .portrait
+      width: 100%
+      height: auto
+      img
+        width: 100%
+      //background-color: #f1f1f1
+    .about-text
+      padding-top: 60px
+      width: 50%
+    .contact-det
+      padding-top: 30px
+      width: 25%
+      padding-bottom: 80px
+      h6
+        font-weight: 700
+        padding-bottom: 10px
+        transition: all 300ms ease-in-out
+        cursor: pointer
+        &:hover
+          transform: translateX(10px)
+        a
+          color: #111
+
+
+//iphone 4 + 4s 320px - 480px
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .about
+    .hero
+      h1
+        font-size: 1.5rem
+    .about-me
+      .portrait
+      .about-text
+        width: 100%
+      .contact-det
+        padding-bottom: 50px
+
+@media only screen and (max-width: 766px)
+  .about
+    .hero
+      h1
+        font-size: 1.5rem
+    .about-me
+      .portrait
+      .about-text
+        width: 100%

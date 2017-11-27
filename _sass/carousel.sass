@@ -1,0 +1,53 @@
+.carousel-window
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  display: none
+  position: fixed
+  z-index: 9999
+  .exit-carousel
+    background-color: rgba(255,255,255,1)
+    display: flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    justify-content: flex-end
+    -webkit-box-pack: flex-end
+    -ms-flex-pack: flex-end
+    padding-right: 20px
+    padding-top: 20px
+    cursor: pointer
+  .carousel-container
+    width: 100%
+    height: 100vh
+    background: rgba(255,255,255,1)
+    display: flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    text-align: center
+    align-items: center
+    -webkit-box-align: center
+    -moz-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    justify-content: center
+    -webkit-justify-content: center
+    .prev-btn
+      width: 5%
+      svg
+        width: 30px
+        cursor: pointer
+    .l-img-container
+      width: 90%
+      img
+        max-width: 70%
+        max-height: 70%
+    .next-btn
+      width: 5%
+      svg
+        cursor: pointer
+        width: 30px

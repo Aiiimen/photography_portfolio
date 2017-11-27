@@ -1,0 +1,122 @@
+.footer
+  font-family: Proxima_reg, Proxima_reg_eot
+  padding-top: 50px
+  width: 100%
+  font-size: 12px
+  .links
+    font-size: 12px
+    width: 100%
+    display: flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-justify-content: space-between
+    padding-bottom: 20px
+    .navigation
+      width: 33%
+      nav
+        ol
+          font-family: Proxima_bold, Porxima_bold_eot
+          list-style: none
+          letter-spacing: 1.5
+          padding: 0
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          li
+            padding-right: 20px
+            a
+              color: #111
+    .social-media
+      display: flex
+      display: -webkit-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      -webkit-justify-content: space-between
+      // width: 33%
+      text-align: center
+      svg
+        width: 18px
+        height: 18px
+        margin-left: 20px
+        cursor: pointer
+    .contact
+      width: 33%
+      text-align: right
+      font-family: Proxima_bold, Proxima_bold_eot
+      span
+        font-family: Proxima_reg, Proxima_reg_eot
+        font-size: 10px
+        color: #787878
+      a
+        color: #111
+
+
+
+  .additional-info
+    width: 100%
+    display: flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    justify-content: space-between
+    -webkit-justify-content: space-between
+    -webkit-box-pack: space-between
+    -ms-flex-pack: space-between
+    padding-bottom: 30px
+    .creater
+      span
+        font-family: Proxima_bold, Proxima_bold_eot
+        text-decoration: underline
+
+
+
+//iphone 4 + 4s 320px - 480px
+@media only screen and (max-width: 766px)
+  .footer
+    .links
+      display: flex
+      display: -webkit-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      justify-content: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      align-items: center
+      -webkit-box-align: center
+      -moz-box-align: center
+      -ms-flex-align: center
+      -webkit-align-items: center
+      //text-align: center
+      .navigation
+        width: 100%
+        display: flex
+        display: -webkit-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        justify-content: center
+        justify-content: center
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+      .social-media
+        margin-bottom: 16
+        svg
+          margin-left: 0
+          margin-right: 20px
+      .contact
+        width: 100%
+        text-align: center
+        padding-bottom: 30px
+    .additional-info
+      display: block
+      font-size: 10px

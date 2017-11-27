@@ -1,0 +1,49 @@
+.contact-container
+  font-family: Proxima_bold, Proxima_bold_eot
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  padding-top: 100px
+  padding-bottom: 80px
+  p
+    font-size: 62px
+  .contact-form
+    display: flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-flex-direction: column
+    width: 50%
+    input, textarea
+      margin-bottom: 30px
+      font-family: Proxima_reg, Proxima_reg_eot
+    input:focus, textarea:focus
+      outline: none !important
+      background-color: white
+    button
+      padding: 10px
+      background-color: #111
+      color: white
+      border: none
+      cursor: pointer
+
+
+@media only screen and (max-width: 766px)
+  .contact-container
+    p
+    .contact-form
+      width: 80%
