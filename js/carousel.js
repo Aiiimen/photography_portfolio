@@ -99,7 +99,7 @@ function carouselNav(){
 
 function loadImages(start, stop) {
   var img = document.createElement("img");
-  img.src = "/css/img/event/photo-" + start + ".jpg";
+  img.src = "/css/img/event/photo-" + start + "-min.jpg";
   //console.log(img.src);
   if (start === stop) { //all assests are loaded
     img.onload= function(){
