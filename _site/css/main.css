@@ -30,8 +30,6 @@
     display: -webkit-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-flex-direction: column;
     justify-content: center;
     -webkit-justify-content: center;
@@ -493,18 +491,14 @@
     -webkit-align-items: center;
     justify-content: center;
     -webkit-justify-content: center; }
-    .carousel-window .carousel-container .prev-btn {
-      width: 5%; }
-      .carousel-window .carousel-container .prev-btn svg {
-        width: 30px;
-        cursor: pointer; }
+    .carousel-window .carousel-container .prev-btn svg {
+      width: 30px;
+      cursor: pointer; }
     .carousel-window .carousel-container .l-img-container {
       width: 90%; }
       .carousel-window .carousel-container .l-img-container img {
         max-width: 70%;
         max-height: 70%; }
-    .carousel-window .carousel-container .next-btn {
-      width: 5%; }
-      .carousel-window .carousel-container .next-btn svg {
-        cursor: pointer;
-        width: 30px; }
+    .carousel-window .carousel-container .next-btn svg {
+      cursor: pointer;
+      width: 30px; }

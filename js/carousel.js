@@ -31,65 +31,55 @@ $(window).on('load', function(){
   //get index and show carousel
   $('.col').on('click', function(){
      current = parseInt($(this).attr('id'));
-     //show carousel
-     carousel(current);
-   });
+     console.log(current);
 
+
+     //show carousel
+     carouselWin.show();
+     $('#img').children().attr('src', imagesList[current].src);
+
+     $('body').css({
+       overflow: 'hidden'
+     });
+
+     //disable prev if first pic selected
+     if (current=== 0){
+       prev.hide();
+       next.show();
+     }
+     // //disable next if last pic selected
+     if(current === imagesList.length-1){
+       next.hide();
+       prev.show();
+     }
+   });
+   carouselNav();
 });
 
-// get img on click and show carousel
-function carousel(current){
-  carouselWin.show();
-  $('#img').children().attr('src', imagesList[current].src);
-
-  $('body').css({
-    overflow: 'hidden'
-  });
-  carouselNav();
-}
 
 function carouselNav(){
-
-  //disable prev if first pic selected
-  if (current=== 0){
-    prev.hide();
-    next.show();
-  }
-  // //disable next if last pic selected
-  if(current === imagesList.length-1){
-    next.hide();
-    prev.show();
-  }
-
-  if(current > 0 && current < imagesList.length-1){
-    prev.show();
-    next.show();
-  }
-
   next.on('click', function(){
-    console.log(current);
-
-    if(current+1 === imagesList.length-1){
-
-      $('#img').children().attr('src', imagesList[++current].src);
+    ++current;
+    if(current === imagesList.length-1){
+      $('#img').children().attr('src', imagesList[current].src);
       next.hide();
       prev.show()
     }else{
-      $('#img').children().attr('src', imagesList[++current].src);
+      $('#img').children().attr('src', imagesList[current].src);
       next.show();
       prev.show();
     }
   });
 
-  prev.on('click', function(){
-    console.log(current);
 
-    if(current === 1){
-      $('#img').children().attr('src', imagesList[--current].src);
+  prev.on('click', function(){
+    --current;
+    if(current === 0){
+      $('#img').children().attr('src', imagesList[current].src);
       prev.hide();
       next.show();
     }else{
-      $('#img').children().attr('src', imagesList[--current].src);
+      $('#img').children().attr('src', imagesList[current].src);
       prev.show();
       next.show();
     }
