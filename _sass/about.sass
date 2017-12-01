@@ -1,99 +1,52 @@
-.header
-  .about
-    div
-      a
-        color: #bfbfbf
-      a:nth-child(2)
-        color: #110f0f
-  .about_container
-    padding: 0 120px 80px 120px
-    display: flex
-    display: -webkit-flex
-    display: -ms-flexbox
-    flex-direction: column
-    -ms-flex-direction: column
-    -webkit-flex-direction: column
-    .about_intro
-      align-self: flex-start
-      -ms-align-self: flex-start
-      -webkit-align-self: flex-start
+.about
+  padding-top: 80px
+  .hero
+    width: 100%
+  .about-me
+    padding-top: 45px
+    .portrait
       width: 100%
-      box-sizing: border-box
-      text-align: left
-    .contact_details
-      font-size: 26px
-      font-family: Proxima_reg
-      width: 100%
-      padding-top: 80px
-      .contact
-        display: flex
-        display: -ms-flexbox
-        display: -webkit-flex
-        img
-          margin-right: 40px
-          width: 30px
-          height: 30px
-        p
-          margin-top: 0
-          a
-            text-decoration: none
-            color: #110f0f
-    .info
-      display: flex
-      display: -ms-flexbox
-      display: -webkit-flexbox
-      width: 100%
-      padding-top: 50px
-      box-sizing: border-box
-      font-size: 22px
-      font-family: Proxima_reg
-      line-height: 32px
-      .description
-        width: 50%
-      .portrait
-        text-align: center
-        width: 50%
-        img
-          width: 70%
-          height: auto
+      height: auto
+      img
+        width: 100%
+      //background-color: #f1f1f1
+    .about-text
+      padding-top: 60px
+      width: 50%
+    .contact-det
+      padding-top: 30px
+      width: 25%
+      padding-bottom: 80px
+      h6
+        font-weight: 700
+        padding-bottom: 10px
+        transition: all 300ms ease-in-out
+        cursor: pointer
+        &:hover
+          transform: translateX(10px)
+        a
+          color: #111
 
-
-
-//media queries
 
 //iphone 4 + 4s 320px - 480px
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
-  .header
-    .about_container
-      padding: 0
-      .about_intro
-        text-align: center
-      .contact_details
-        font-size: 20px
-      .info
-        flex-direction: column
-        -ms-flex-direction: column
-        -webkit-flex-direction: column
-        .description
-          width: 100%
-          font-size: 18px
-        .portrait
-          width: 100%
+  .about
+    .hero
+      h1
+        font-size: 1.5rem
+    .about-me
+      .portrait
+      .about-text
+        width: 100%
+      .contact-det
+        padding-bottom: 50px
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-  .header
-    .about_container
-      padding: 0
-      .about_intro
-        text-align: center
-      .contact_details
-        font-size: 20px
-      .info
-        flex-direction: column
-        -ms-flex-direction: column
-        -webkit-flex-direction: column
-        .description
-          width: 100%
-          font-size: 18px
-        .portrait
-          width: 100%
+@media only screen and (max-width: 766px)
+  .about
+    .hero
+      h1
+        font-size: 1.5rem
+    .about-me
+      .portrait
+      .about-text
+        width: 100%
