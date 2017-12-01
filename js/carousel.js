@@ -31,8 +31,6 @@ $(window).on('load', function(){
   //get index and show carousel
   $('.col').on('click', function(){
      current = parseInt($(this).attr('id'));
-     console.log(current);
-
 
      //show carousel
      carouselWin.show();
@@ -44,13 +42,13 @@ $(window).on('load', function(){
 
      //disable prev if first pic selected
      if (current=== 0){
-       prev.hide();
-       next.show();
+       $('#prev').hide();
+       $('#next').show();
      }
      // //disable next if last pic selected
      if(current === imagesList.length-1){
-       next.hide();
-       prev.show();
+       $('#next').hide();
+       $('#prev').show();
      }
    });
    carouselNav();
@@ -58,30 +56,31 @@ $(window).on('load', function(){
 
 
 function carouselNav(){
-  next.on('click', function(){
+
+  $('#next').on('click', function(){
     ++current;
     if(current === imagesList.length-1){
       $('#img').children().attr('src', imagesList[current].src);
-      next.hide();
-      prev.show()
+      $('#next').hide();
+      $('#prev').show()
     }else{
       $('#img').children().attr('src', imagesList[current].src);
-      next.show();
-      prev.show();
+      $('#next').show();
+      $('#prev').show();
     }
   });
 
 
-  prev.on('click', function(){
+  $('#prev').on('click', function(){
     --current;
     if(current === 0){
       $('#img').children().attr('src', imagesList[current].src);
-      prev.hide();
-      next.show();
+      $('#prev').hide();
+      $('#next').show();
     }else{
       $('#img').children().attr('src', imagesList[current].src);
-      prev.show();
-      next.show();
+      $('#prev').show();
+      $('#next').show();
     }
   });
 }

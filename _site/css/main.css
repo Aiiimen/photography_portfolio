@@ -462,7 +462,8 @@
   user-select: none;
   display: none;
   position: fixed;
-  z-index: 9999; }
+  z-index: 9999;
+  width: 100vw; }
   .carousel-window .exit-carousel {
     background-color: white;
     display: flex;
