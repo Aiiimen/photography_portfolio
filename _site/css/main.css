@@ -10,8 +10,14 @@
 @font-face {
   font-family: Proxima_bold_eot;
   src: url(proximanove-bold-webfont.eot); }
+@font-face {
+  font-family: Proxima_reg_IE;
+  src: url(../css/proximanova-regular-webfont.woff); }
+@font-face {
+  font-family: Proxima_bold_IE;
+  src: url(../css/proximanova-bold-webfont.woff); }
 .photos {
-  font-family: Proxima_reg, Proxima_reg_eot;
+  font-family: Proxima_reg, Proxima_reg_eot, Proxima_reg_IE;
   padding-top: 30px;
   max-width: 100%;
   position: relative;
@@ -55,7 +61,7 @@
     margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: Proxima_bold, Proxima_bold_eot;
+    font-family: Proxima_bold, Proxima_bold_eot, Proxima_bold_IE;
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -177,7 +183,7 @@
   .about .about-me .about-text {
     width: 100%; } }
 .contact-container {
-  font-family: Proxima_bold, Proxima_bold_eot;
+  font-family: Proxima_bold, Proxima_bold_eot, Proxima_bold_IE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +214,7 @@
     width: 50%; }
     .contact-container .contact-form input, .contact-container .contact-form textarea {
       margin-bottom: 30px;
-      font-family: Proxima_reg, Proxima_reg_eot; }
+      font-family: Proxima_reg, Proxima_reg_eot, Proxima_reg_IE; }
     .contact-container .contact-form input:focus, .contact-container .contact-form textarea:focus {
       outline: none !important;
       background-color: white; }
@@ -276,7 +282,7 @@
         display: none; }
         .nav_container .nav_bar .hamburger-menu nav ol {
           font-size: 12px;
-          font-family: Proxima_bold, Proxima_bold_eot;
+          font-family: Proxima_bold, Proxima_bold_eot, Proxima_bold_IE;
           padding-top: 20px;
           padding-bottom: 15px;
           list-style-type: none;
@@ -343,7 +349,7 @@
       height: 40px;
       width: 40px; } }
 .footer {
-  font-family: Proxima_reg, Proxima_reg_eot;
+  font-family: Proxima_reg, Proxima_reg_eot, Proxima_reg_IE;
   padding-top: 50px;
   width: 100%;
   font-size: 12px; }
@@ -362,7 +368,7 @@
     .footer .links .navigation {
       width: 33%; }
       .footer .links .navigation nav ol {
-        font-family: Proxima_bold, Porxima_bold_eot;
+        font-family: Proxima_bold, Porxima_bold_eot, Proxima_bold_IE;
         list-style: none;
         letter-spacing: 1.5;
         padding: 0;
@@ -391,9 +397,9 @@
     .footer .links .contact {
       width: 33%;
       text-align: right;
-      font-family: Proxima_bold, Proxima_bold_eot; }
+      font-family: Proxima_bold, Proxima_bold_eot, Proxima_bold_IE; }
       .footer .links .contact span {
-        font-family: Proxima_reg, Proxima_reg_eot;
+        font-family: Proxima_reg, Proxima_reg_eot, Proxima_reg_IE;
         font-size: 10px;
         color: #787878; }
       .footer .links .contact a {
@@ -410,7 +416,7 @@
     -ms-flex-pack: space-between;
     padding-bottom: 30px; }
     .footer .additional-info .creater span {
-      font-family: Proxima_bold, Proxima_bold_eot;
+      font-family: Proxima_bold, Proxima_bold_eot, Proxima_bold_IE, Proxima_bold_IE;
       text-decoration: underline; }
 
 @media only screen and (max-width: 766px) {
