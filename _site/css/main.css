@@ -275,9 +275,9 @@
       height: 100%; }
       .nav_container .nav_bar .hamburger-menu .trigger {
         cursor: pointer; }
-      .nav_container .nav_bar .hamburger-menu div:nth-child(3) {
-        width: 10px;
-        cursor: pointer; }
+        .nav_container .nav_bar .hamburger-menu .trigger svg {
+          display: block;
+          margin-bottom: 3.5px; }
       .nav_container .nav_bar .hamburger-menu nav {
         display: none; }
         .nav_container .nav_bar .hamburger-menu nav ol {
@@ -296,12 +296,6 @@
             .nav_container .nav_bar .hamburger-menu nav ol li a {
               color: #111;
               text-decoration: none; }
-
-.menu {
-  height: 2.5px;
-  width: 20px;
-  background-color: #111;
-  margin-bottom: 3px; }
 
 @media only screen and (max-width: 1024px) {
   .nav_container {
@@ -354,9 +348,9 @@
   font-family: Proxima_reg, Proxima_reg_eot, Proxima_reg_IE;
   padding-top: 50px;
   width: 100%;
-  font-size: 12px; }
+  font-size: 14px; }
   .footer .links {
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
     display: flex;
     display: -webkit-box;
