@@ -145,7 +145,8 @@
 .about {
   padding-top: 80px; }
   .about .hero {
-    width: 100%; }
+    width: 100%;
+    font-family: Proxima_bold, Proxima_bold_eot, Proxima_bold_IE; }
   .about .about-me {
     padding-top: 45px; }
     .about .about-me .portrait {
@@ -154,6 +155,7 @@
       .about .about-me .portrait img {
         width: 100%; }
     .about .about-me .about-text {
+      font-family: Proxima_reg, Proxima_reg_eot, Proxima_reg_IE;
       padding-top: 60px;
       width: 50%; }
     .about .about-me .contact-det {
